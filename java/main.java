@@ -5,7 +5,7 @@ public class main {
         System.out.print("Can you read this ?");
         System.out.println("What's woring with VS Code?");
         System.out.println("yes krishna i can read  it.");
-        System.out.println("The Hail is yor problemo!");
+        System.out.println("i am adding  something, done by vedant");
         System.out.println("The hail is this brooo");
     }
 }
