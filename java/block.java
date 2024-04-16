@@ -1,9 +1,4 @@
 package java;
-<<<<<<< HEAD
-public class block {
-    
-}
-=======
 import java.util.Arrays;
 
 public class Block {
@@ -48,4 +43,4 @@ public class Block {
         this.previousBlockHash = previousBlockHash;
     }
 }
->>>>>>> 25f5ac5 (blockchain)
+
