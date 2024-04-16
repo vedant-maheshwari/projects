@@ -1,7 +1,6 @@
-package java;
 import java.util.Arrays;
 
-public class block {
+public class Block {
     private String[] transactions;
     private int blockHash;
     private int previousBlockHash;
@@ -12,12 +11,12 @@ public class block {
         ", previousBlockHash=" + previousBlockHash +"]";
     }
     
-    public block(String[] transactions, int previousBlockHash) {
+    public Block(String[] transactions, int previousBlockHash) {
         super();
         this.transactions = transactions;
         this.previousBlockHash = previousBlockHash;
-        this.blockHash = Arrays.hashCode(new int[]{Arrays.hashCode(Arrays.toString(transactions).getBytes()), this.previousBlockHash});
-    }    
+        this.blockHash = Arrays.hashCode( new int[] { Arrays.hashCode(Arrays.toString(transactions).getBytes()), this.previousBlockHash});
+    }
     
     public String[] getTransactions () {
         return transactions;
