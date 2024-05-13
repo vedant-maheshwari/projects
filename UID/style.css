@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+}
+.main-header{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(34, 34, 220, 0.613);
+}
+.header{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.header ul{
+    text-align: center;
+}
+
+.header ul li{
+    display: inline;
+}
+
+.header ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: whitesmoke;
+    transition-duration: 0.5s;
+    padding: 20px;
+}
+
+#active{
+    border: 1px solid rgba(34, 34, 220, 0.88);
+    background-color: rgba(34, 34, 220, 0.724);
+    padding: 12px 20px;
+}
+
+.header ul li a:hover{
+    border: 1px solid rgba(34, 34, 220, 0.88);
+    background-color: rgba(34, 34, 220, 0.724);
+    padding: 12px 20px;
+}
+
+.text-box{
+    height: 230px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text-box > p{
+    font-size: 55px;
+    color: whitesmoke;
+    margin-left: 20px;
+}
+
+.text-box-2{
+    /* background-color: rgb(243, 242, 242); */
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text-box-2 > p{
+    position: relative;
+    top: -10px;
+    font-size: 55px;
+    color: rgba(34, 34, 220, 0.613);
+    margin-left: 20px;
+}
+
+.car{
+    position: relative;
+    width: 150px;
+    height: 100px;
+    top: 125px;
+    animation-name: car;
+    animation-delay: 2s;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes car {
+    0%{
+        position: relative;
+        left: 0;
+
+    }
+    100%{
+        position: relative;
+        left: 1290px;
+    }
+}
+
+.content{
+    background-color: rgba(34, 34, 220, 0.613);
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    
+}
+
+.main-con p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 30px;
+    line-height: 1.5;
+}
+
+.happy{
+    font-size: 55px;
+}
+.grid-ele{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blocks{
+    height: 100px;
+    background-color: rgba(34, 34, 220, 0.300);
+    box-shadow: 5px 5px 5px rgba(34, 34, 220, 0.613);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px 20px;
+    transition: 0.5s;
+    height: 200px;
+}
+
+.blocks p{
+    color: whitesmoke;
+    font-size: 17px;
+}
+
+.blocks h2{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.blocks:hover{
+    box-shadow: 10px 10px 5px rgba(34, 34, 220, 0.613);
+    padding: 13px;
+}
+
+
