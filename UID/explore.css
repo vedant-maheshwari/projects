@@ -87,6 +87,7 @@ body{
     margin: 4px 2px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    border-radius: 12px;
 }
 
 .city a:hover{

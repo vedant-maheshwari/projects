@@ -25,12 +25,15 @@
             <img src="jaipur.jpeg" style="width: 720px; height: 410px;" alt="">
         </div>
     <div class="feedback" id="feedback">
+        <div class="succes" id="succes" style="display: none; color: green;"><p>Your feedback has been submitted!!</p></div>
+        <div id="form">
         <form>
             <input type="text" id="name" placeholder="Name" required>
             <input type="email" id="email" placeholder="Email" required><br>
             <textarea name="text" id="text" cols="50" rows="10" placeholder="Your Review" required></textarea><br>
-            <input type="submit" value="Submit" onclick=func()><br>
+            <input type="submit" value="Submit" id="submit" onclick=func()><br>
         </form>
+    </div>
     </div>
     <div class="contact">
         <h2>Contact Us</h2>
@@ -46,8 +49,10 @@
     <div></div>
 
     <script>
+        
         function func(){
-            document.getElementById("feedback").innerHTML = 'Submitted';
+            document.getElementById("succes").style.display = 'block';
+            document.getElementById("form").style.display = 'none';
             
         }
     </script>
