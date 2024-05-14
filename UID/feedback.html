@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="main-header">
+        <div class="header">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="feedback.html" id="active">Feedback</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div class="text-box">  
+            <p>Feedback Form</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="temp">
+            <img src="jaipur.jpeg" style="width: 720px; height: 410px;" alt="">
+        </div>
+    <div class="feedback" id="feedback">
+        <form>
+            <input type="text" id="name" placeholder="Name" >
+            <input type="email" id="email" placeholder="Email" ><br>
+            <textarea name="text" id="text" cols="50" rows="10" placeholder="Your Review" ></textarea><br>
+            <input type="submit" value="Submit" onclick=func()><br>
+        </form>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 198 West 21th Street, Suite 721 New York NY 10016</p>
+        <p>Phone: + 1235 2355 98</p>
+        <p>Email: info@yoursite.com</p>
+    </div>
+    <div class="temp2">
+        <img src="lucknow.jpeg" style="width: 520px; height: 280px;" alt="">
+    </div>
+    </div>
+    <br><br>
+    <div></div>
+
+    <script>
+        function func(){
+            document.getElementById("feedback").innerHTML = 'Submitted';
+            
+        }
+    </script>
+</body>
+</html>
