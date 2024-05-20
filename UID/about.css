@@ -48,14 +48,98 @@ body{
 }
 
 .text-box{
-    height: 230px;
+    height: 170px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    color: white;
+    font-size:xx-large;
 }
 
 .text-box > p{
     font-size: 55px;
     color: whitesmoke;
     margin-left: 20px;
+}
+.about-us {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.about-us p {
+    color: inherit; /* Default text color */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.our-mission {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.our-mission h2 {
+    color: rgba(34, 34, 220, 0.613);
+}
+
+.our-mission p {
+    color: inherit; /* Default text color */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.team {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team h2 {
+    color: rgba(34, 34, 220, 0.613);
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.team-members .m1,
+.team-members .m2 {
+    padding: 20px;
+}
+
+.team-members h3 {
+    color: rgba(34, 34, 220, 0.613);
+}
+
+.contact {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact h2 {
+    color: rgba(34, 34, 220, 0.613);
+}
+
+.contact p {
+    color: inherit; 
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
 }

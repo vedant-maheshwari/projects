@@ -1,11 +1,9 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f2f2f2;
@@ -13,14 +11,12 @@ body {
     line-height: 1.6;
 }
 
-/* Container styles */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header styles */
 header {
     text-align: center;
     padding: 50px 0;
@@ -30,7 +26,7 @@ header {
 }
 
 header:hover h1 {
-    color: #ff6b6b; /* Highlight color on hover */
+    color: #ff6b6b; 
 }
 
 header h1 {
