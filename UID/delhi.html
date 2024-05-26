@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delhi - Explore the Capital Wonders</title>
     <link rel="stylesheet" href="city.css">
+    <style>
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        #popup button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #popup button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="main-header">
@@ -96,7 +121,13 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14011.70203711745!2d77.20902139726983!3d28.613939193423552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2f1af0e7b03%3A0xa4e0c3edcfaa2c21!2sDelhi%2C%20India!5e0!3m2!1sen!2sus!4v1656132563702!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </div>
-    
+
+    <div id="popup">
+        <h1>Exciting Offer</h1>
+        <p>Get discount upto 10% by using code : BH65D22D when you go to any Resturant in Delhi!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
     <footer>
         <p>&copy; 2024 Explore City. All Rights Reserved.</p>
     </footer>
@@ -105,6 +136,16 @@
         function changeImage(src) {
             document.getElementById('mainImage').src = src;
         }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        setTimeout(showPopup, 1000);
     </script>
 </body>
 </html>
