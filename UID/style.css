@@ -117,6 +117,8 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+
+
 .blocks{
     height: 100px;
     background-color: rgba(34, 34, 220, 0.300);
@@ -124,7 +126,7 @@ body{
     border-radius: 20px;
     padding: 20px;
     margin: 0px 20px;
-    transition: 0.5s;
+    transition: 1s;
     height: 200px;
 }
 
@@ -138,10 +140,49 @@ body{
     text-align: center;
 }
 
+.block2{
+    height: 100px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px rgba(34, 34, 220, 0.613);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px 20px;
+    transition: 1s;
+    height: 200px;
+}
+
+.block2 p{
+    color: rgba(34, 34, 220, 0.613);
+}
+
+.block2 h2{
+    color: rgba(34, 34, 220, 0.613);
+}
+
 .blocks:hover{
     box-shadow: 10px 10px 5px rgba(34, 34, 220, 0.613);
     padding: 13px;
+    background-color: whitesmoke;
 }
+.blocks:hover p{
+    color: rgba(34, 34, 220, 0.613);
+}
+.blocks:hover h2{
+    color: rgba(34, 34, 220, 0.613);
+}
+
+.block2:hover{
+    box-shadow: 10px 10px 5px rgba(34, 34, 220, 0.613);
+    padding: 13px;
+    background-color: rgba(34, 34, 220, 0.300);
+}
+.block2:hover p{
+    color: whitesmoke;
+}
+.block2:hover h2{
+    color: whitesmoke;
+}
+
 footer {
     text-align: center;
     padding: 20px 0;
