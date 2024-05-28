@@ -1,5 +1,7 @@
+
 body{
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 .main-header{
     width: 100%;
@@ -89,7 +91,7 @@ body{
     }
     100%{
         position: relative;
-        left: 1368px;
+        left: 1295px;
     }
 }
 
@@ -147,7 +149,7 @@ body{
     border-radius: 20px;
     padding: 20px;
     margin: 0px 20px;
-    transition: 1s;
+    transition: 0.8s;
     height: 200px;
 }
 
@@ -161,7 +163,7 @@ body{
 
 .blocks:hover{
     box-shadow: 10px 10px 5px rgba(34, 34, 220, 0.613);
-    padding: 13px;
+    transform: translatey(-5%);
     background-color: whitesmoke;
 }
 .blocks:hover p{
@@ -173,7 +175,7 @@ body{
 
 .block2:hover{
     box-shadow: 10px 10px 5px rgba(34, 34, 220, 0.613);
-    padding: 13px;
+   
     background-color: rgba(34, 34, 220, 0.300);
 }
 .block2:hover p{
@@ -183,14 +185,142 @@ body{
     color: whitesmoke;
 }
 
-footer {
+/* .circle{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 50px;
+}
+
+.card{
+    background-color: #FAFAFA;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 200px;
+} */
+
+.circle {
+    padding: 50px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 50px;
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.card {
+    background-color: #FAFAFA;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 200px; 
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 8px 24px 0 rgba(0, 0, 0, 0.25);
+}
+
+.circle p {
     text-align: center;
-    padding: 20px 0;
-    background-color: #333;
+    margin: 0;
+    font-size: 18px;
+    color: #2222DC; /* Matches the theme color */
+}
+
+
+#btn {
+    text-align: center;
+    position: relative;
+    width: 150px; 
+    height: 40px; 
+    background-color: rgba(34, 34, 220, 0.613); 
+    color: whitesmoke;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 20px auto; /* Center the button horizontally */
+    cursor: pointer;
+}
+
+#btn a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+#btn:hover {
+    background-color: rgba(34, 34, 220, 0.8);
+    transform: scale(1.05);
+}
+
+
+/* CSS for Footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1.3fr;
+    background-color: #23222e;
+    padding: 40px 80px;
+    margin-top: 200px;
+}
+
+.footer .copy {
     color: #fff;
+    margin-top: 100px;
+    text-align: left;
 }
 
-footer p {
-    font-size: 14px;
+.bottom-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
 }
 
+.bottom-links .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.bottom-links .links span {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bottom-links .links a {
+    text-decoration: none;
+    color: #a1a1a1;
+    padding: 10px 20px;
+    font-size: 19px;
+    transition: 0.4s;
+    color: black;
+}
+.bottom-links .links a:hover{
+    scale: calc(1.1);
+    color: rgba(34, 34, 220, 0.613);
+}
+.links .social{
+    font-size: 33px;
+    transition: 0.3s;
+}
+.links .social:hover{
+    scale: calc(1.1);
+    color:  rgba(34, 34, 220, 0.613);
+
+}

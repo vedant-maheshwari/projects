@@ -117,13 +117,65 @@ body{
     border: 1px solid black;
     padding: 3px 10px;
 }
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
+
+/* CSS for Footer */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1.3fr;
+    background-color: #23222e;
+    padding: 40px 80px;
+    margin-top: 200px;
 }
 
-footer p {
-    font-size: 14px;
+.footer .copy {
+    color: #fff;
+    margin-top: 100px;
+    text-align: left;
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.bottom-links .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.bottom-links .links span {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bottom-links .links a {
+    text-decoration: none;
+    color: #a1a1a1;
+    padding: 10px 20px;
+    font-size: 19px;
+    transition: 0.4s;
+    color: black;
+}
+.bottom-links .links a:hover{
+    scale: calc(1.1);
+    color: rgba(34, 34, 220, 0.613);
+}
+.links .social{
+    font-size: 33px;
+    transition: 0.3s;
+}
+.links .social:hover{
+    scale: calc(1.1);
+    color:  rgba(34, 34, 220, 0.613);
+
 }
