@@ -54,7 +54,7 @@ body{
 }
 
 .content{
-    margin: 100px 100px 50px 100px;
+    margin: 100px 100px 0px 100px;
 }
 
 .c1{
@@ -98,28 +98,39 @@ body{
     }
 }
 
-.card{
+.card {
     margin: 0 100px 100px 100px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* flex-direction: column; */
     gap: 100px;
 }
 
-.box{
-    background-color: rgba(34, 34, 220, 0.613);
-    height: 500px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.box {
+    position: relative;
+    padding: 20px;
     transition: 1s;
+    overflow: hidden;
 }
 
-.box:hover{
-    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+#circle {
+    border-radius: 50%; 
+    height: 240px; 
+    width: 240px; 
+    float: left;
+    margin: 0 20px 20px 0;
+    shape-outside: circle();
 }
 
-.box h1{
-    color: whitesmoke;
+.box h2 {
     text-align: center;
 }
+
+.box p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
 
 .footer {
     display: grid;
@@ -128,6 +139,7 @@ body{
     padding: 40px 80px;
     margin-top: 200px;
 }
+
 
 .footer .copy {
     color: #fff;
