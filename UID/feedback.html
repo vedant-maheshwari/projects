@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="main-header">
@@ -25,13 +26,16 @@
             <img src="jaipur.jpeg" style="width: 720px; height: 410px;" alt="">
         </div>
         <div class="feedback" id="feedback">
-            <div class="succes" id="succes" style="display: none; color: green;"><p>Your feedback has been submitted!!</p></div>
+            <div class="success" id="success" style="display: none; color: green;"><p>Your feedback has been submitted!!</p></div>
             <div id="form">
-                <form>
-                    <input type="text" id="name" placeholder="Name" required>
-                    <input type="email" id="email" placeholder="Email" required><br>
-                    <textarea name="text" id="text" cols="50" rows="10" placeholder="Your Review" required></textarea><br>
-                    <input type="submit" value="Submit" id="submit" onclick=func()><br>
+                <form id="feedback-form" onsubmit="return validateForm()">
+                    <input type="text" id="name" placeholder="Name" >
+                    <span class="error" id="name-error"></span>
+                    <input type="email" id="email" placeholder="Email" >
+                    <span class="error" id="email-error"></span>
+                    <textarea name="text" id="text" cols="50" rows="10" placeholder="Your Review" ></textarea>
+                    <span class="error" id="text-error"></span><br>
+                    <input type="submit" value="Submit" id="submit"><br>
                 </form>
             </div>
         </div>
@@ -48,14 +52,7 @@
     <br><br>
     <div></div>
 
-    <script>
-        function func(){
-            document.getElementById("succes").style.display = 'block';
-            document.getElementById("form").style.display = 'none';   
-        }
-    </script>
-    
-    <footer class="footer">
+     <footer class="footer">
         <div class="copy">
             
             <span>&copy; 2024 Explore <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto asperiores nesciunt dolorum nostrum, inventore vel tempora optio eaque dignissimos.</span>
@@ -84,4 +81,52 @@
             </div>
     </footer>
 </body>
+
+    <script>
+        
+    document.getElementById('feedback-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let isValid = true;
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const text = document.getElementById('text').value;
+
+    const nameError = document.getElementById('name-error');
+    const emailError = document.getElementById('email-error');
+    const textError = document.getElementById('text-error');
+
+    nameError.textContent = '';
+    emailError.textContent = '';
+    textError.textContent = '';
+
+    if (name === '') {
+        nameError.textContent = 'Name is required.';
+        isValid = false;
+    }
+
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (email === '') {
+        emailError.textContent = 'Email is required.';
+        isValid = false;
+    } else if (!emailPattern.test(email)) {
+        emailError.textContent = 'Invalid email format.';
+        isValid = false;
+    }
+
+    if (text === '') {
+        textError.textContent = 'Feedback is required.';
+        isValid = false;
+    }
+
+    if (isValid) {
+        document.getElementById("success").style.display = 'block';
+        document.getElementById("form").style.display = 'none';
+    }
+});
+
+
+
+    </script>
 </html>

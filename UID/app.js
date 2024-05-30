@@ -1,3 +1,10 @@
+const btn = document.querySelector(".fa")
+btn.addEventListener("click",function show(){
+    const searchbox = document.getElementById("search-item")
+    searchbox.style.display = 'block';
+    btn.style.display = 'none';
+})
+
 const search = () => {
     const searchbox = document.getElementById("search-item").value.toUpperCase();
     const searchitem = document.getElementById("contents");
