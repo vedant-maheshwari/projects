@@ -185,19 +185,6 @@ body{
     color: whitesmoke;
 }
 
-/* .circle{
-    padding: 100px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-    gap: 50px;
-}
-
-.card{
-    background-color: #FAFAFA;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 200px;
-} */
 
 .circle {
     padding: 50px; 
@@ -323,4 +310,118 @@ body{
     scale: calc(1.1);
     color:  rgba(34, 34, 220, 0.613);
 
+}
+/* Adjust background color and font styles */
+.content-2 {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content-2 h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.content-2 p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Button styles */
+#btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    background-color: #007bff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#btn a:hover {
+    background-color: #0056b3;
+}
+
+/* Circle card styles */
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Grid layout for text and image */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Adjust the gap between items */
+    margin-top: 50px; /* Adjust margin as needed */
+}
+/* New Styles */
+
+.benefits-container {
+    background-color: rgba(131, 16, 247, 0.613);;
+    box-shadow: 5px 5px 5px rgba(34, 34, 220, 0.613);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 20px;
+    transition: 1s;
+    height: 200px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.benefits-text {
+    color: whitesmoke;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Text and Image Grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    margin-top: 40px;
+    background-color: rgba(34, 34, 220, 0.613);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(34, 34, 220, 0.613);
+}
+
+.grid-item {
+    background-color: rgba(34, 34, 220, 0.300);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(34, 34, 220, 0.613);
+}
+
+
+.grid-item p {
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
 }
