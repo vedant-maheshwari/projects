@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varanasi - The Spiritual Heart of India</title>
+    <link rel="stylesheet" href="city.css">
+    <style>
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        #popup button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #popup button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <div class="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="text-box">  
+            <header>
+                <h1>Varanasi - The Spiritual Heart of India</h1>
+            </header>    
+        </div> 
+    </div>
+    <div class="container">
+        
+        <section class="description">
+            <h2>About Varanasi</h2>
+            <p>
+                Varanasi, also known as Kashi, is one of the oldest living cities in the world. Situated on the banks of the sacred Ganges River, it is a major center for spiritual and religious activities in India.
+            </p>
+            <p>
+                The city is famous for its ghats, temples, and vibrant cultural scene. Pilgrims and tourists from all over the world visit Varanasi to experience its spiritual essence and witness the evening Ganga Aarti.
+            </p>
+        </section>
+        
+        <section class="gallery">
+            <h2>Discover Varanasi</h2>
+            <div class="gallery-main">
+                <img id="mainImage" src="https://cdn.britannica.com/13/189813-050-BF6163E7/Manikarnika-Ghat-cremation-site-Hindu-Ganges-River.jpg" alt="Main view of Hyderabad">
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="https://cdn.britannica.com/13/189813-050-BF6163E7/Manikarnika-Ghat-cremation-site-Hindu-Ganges-River.jpg" alt="Thumbnail view of Hyderabad" onclick="changeImage('https://cdn.britannica.com/13/189813-050-BF6163E7/Manikarnika-Ghat-cremation-site-Hindu-Ganges-River.jpg')">
+                <img src="https://www.travelanddestinations.com/wp-content/uploads/2021/07/Varanasi-waterfront.jpg" alt="Thumbnail view of Hyderabad" onclick="changeImage('https://www.travelanddestinations.com/wp-content/uploads/2021/07/Varanasi-waterfront.jpg')">
+                <img src="https://thelogicalindian.com/h-upload/2023/11/29/234544-fireflyvaranasisghat-placeofritualsandceremonies2534.webp" alt="Thumbnail view of Hyderabad" onclick="changeImage('https://thelogicalindian.com/h-upload/2023/11/29/234544-fireflyvaranasisghat-placeofritualsandceremonies2534.webp')">
+                <img src="https://static.tnn.in/thumb/msid-106062795,thumbsize-150666,width-1280,height-720,resizemode-75/106062795.jpg" alt="Thumbnail view of Hyderabad" onclick="changeImage('https://static.tnn.in/thumb/msid-106062795,thumbsize-150666,width-1280,height-720,resizemode-75/106062795.jpg')">
+            </div>
+        </section>
+        
+        <section class="fun-facts">
+            <h2>Fun Facts About Varanasi</h2>
+            <div class="fact-list">
+                <div class="fact-item">
+                    <p><span class="fact-number">1.</span> Varanasi is considered the spiritual capital of India, with thousands of temples and ghats along the Ganges River.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">2.</span> The city is believed to be over 3,000 years old, making it one of the oldest continuously inhabited cities in the world.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">3.</span> The Ganga Aarti, a devotional ritual on the ghats, attracts numerous visitors every evening for its mesmerizing spectacle.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">4.</span> Varanasi is known for its classical music, silk weaving, and renowned educational institutions like Banaras Hindu University.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="additional-info">
+            <h2>Explore Varanasi</h2>
+            <div class="explore-items">
+                <div class="explore-item">
+                    <img src="https://static.toiimg.com/thumb/45938372.cms?resizemode=75&width=1200&height=900" alt="Tourist Spot">
+                    <h3>Sacred Ghats</h3>
+                    <p>Experience the spiritual ambiance of Varanasi's ghats, where pilgrims perform rituals and ceremonies along the Ganges River.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Benares_%28Varanasi%2C_India%29_-_1922.jpg" alt="Monument">
+                    <h3>Ancient Temples</h3>
+                    <p>Visit the ancient temples of Varanasi, which are revered for their religious significance and architectural beauty.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://icon2.cleanpng.com/lnd/20240418/iub/transparent-varanasi-uttar-pradesh-india-cultural-heritage-rel-varanasi-historical-city-with-rich-culture6621820e071564.79796348.webp" alt="Cultural Importance">
+                    <h3>Cultural Heritage</h3>
+                    <p>Dive into the cultural heritage of Varanasi, known for its classical music, dance, and art forms that have thrived for centuries.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://static.toiimg.com/photo/65527705.cms" alt="Food Center">
+                    <h3>Local Cuisine</h3>
+                    <p>Taste the unique flavors of Varanasi's local cuisine, including famous street foods and traditional delicacies.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.418319623371!2d82.97391377113484!3d25.317645930649415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e33a0ff8e1d47%3A0xdf95db20f71746eb!2sVaranasi%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1656130983702!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>
+    
+    <div id="popup">
+        <h1>Exciting Offer</h1>
+        <p>Get discount upto 10% by using code : BH65D22D when you go to any Resturant in Varanasi!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <footer class="footer">
+        <div class="copy">
+            
+            <span>&copy; 2024 Explore <br><br>All Rights Reserved.</span>
+        </div>
+        <div></div>
+            <div class="bottom-links" style="background-color: whitesmoke; border-radius: 15px; box-shadow: 1px 1px rgb(142, 139, 139);">
+                <div class="links" style="margin-top:-38px ;">
+                    <span>Our Sevices</span>
+                    <a href="https://teachnook.com/PrivacyPolicy">Privacy Policy</a>
+                    <a href="https://teachnook.com/TermsAndConditions">Refund Policy</a>
+                    <a href="https://teachnook.com/">Website</a>
+                </div>
+                <div class="links">
+                    <span>More Info</span>
+                    <a href="Contact_Us.html">Contact Us</a>
+                    <a href="CompareAll.html">Products</a>
+                    <a href="About_Us.html">Career</a>
+                    <a href="Rentals.html">Rentals</a>
+                </div>
+                <div class="links" style="margin-top:-8px ;">
+                    <span>Social Links</span>
+                    <a href="https://www.linkedin.com/company/teachnook"><i class="fab fa-linkedin social"></i></a>
+                    <a href="https://r.search.yahoo.com/_ylt=Awr1QPFP4gxm7BEH9He7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1712149200/RO=10/RU=https%3a%2f%2ftwitter.com%2fteachnook/RK=2/RS=Rc0RHE1I5LDQIQXunqs7tMh0lUQ-"><i class="fab fa-twitter social"></i></a>
+                    <a href="https://www.instagram.com/teachnook/"><i class="fab fa-instagram social"></i></a>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        setTimeout(showPopup, 3000);
+    </script>
+</body>
+</html>

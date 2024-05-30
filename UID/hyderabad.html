@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad - The City of Pearls</title>
+    <link rel="stylesheet" href="city.css">
+    <style>
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        #popup button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #popup button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <div class="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="text-box">  
+            <header>
+                <h1>Hyderabad - The City of Pearls</h1>
+            </header>    
+        </div> 
+    </div>
+    <div class="container">
+        
+        <section class="description">
+            <h2>About Hyderabad</h2>
+            <p>
+                Hyderabad, the capital city of Telangana, is known as the "City of Pearls" due to its historic role in the pearl and diamond trading industry. It is a city that beautifully blends its rich history with modernity.
+            </p>
+            <p>
+                The city is famous for its Mughal architecture, bustling bazaars, and vibrant culinary scene. Hyderabad is also a major center for the technology industry, often referred to as "Cyberabad".
+            </p>
+        </section>
+        
+        <section class="gallery">
+            <h2>Discover Hyderabad</h2>
+            <div class="gallery-main">
+                <img id="mainImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Iconic_Charminar_in_Hyderabad%2C_India.jpg/1200px-Iconic_Charminar_in_Hyderabad%2C_India.jpg" alt="Main view of Hyderabad">
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Iconic_Charminar_in_Hyderabad%2C_India.jpg/1200px-Iconic_Charminar_in_Hyderabad%2C_India.jpg" alt="Thumbnail view of Hyderabad" onclick="changeImage('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Iconic_Charminar_in_Hyderabad%2C_India.jpg/1200px-Iconic_Charminar_in_Hyderabad%2C_India.jpg')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuWvhUZyqk_OwhNC51k06JBT9_IZ_nRq4HzQ&s" alt="Thumbnail view of Hyderabad" onclick="changeImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuWvhUZyqk_OwhNC51k06JBT9_IZ_nRq4HzQ&s')">
+                <img src="https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/04/7d342-interesting-facts-hyderabad.jpg?fit=1000%2C692&ssl=1" alt="Thumbnail view of Hyderabad" onclick="changeImage('https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/04/7d342-interesting-facts-hyderabad.jpg?fit=1000%2C692&ssl=1')">
+                <img src="https://cdn.telanganatoday.com/wp-content/uploads/2023/01/Reality.jpg" alt="Thumbnail view of Hyderabad" onclick="changeImage('https://cdn.telanganatoday.com/wp-content/uploads/2023/01/Reality.jpg')">
+            </div>
+        </section>
+        
+        <section class="fun-facts">
+            <h2>Fun Facts About Hyderabad</h2>
+            <div class="fact-list">
+                <div class="fact-item">
+                    <p><span class="fact-number">1.</span> Hyderabad is home to the famous Charminar, a 16th-century mosque that stands as an iconic symbol of the city.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">2.</span> The city is renowned for its Hyderabadi biryani, a rich and aromatic rice dish that has a global following.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">3.</span> Hyderabad's Hussain Sagar Lake, built in 1563, is one of the largest man-made lakes in India and is known for its large Buddha statue.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">4.</span> The Ramoji Film City in Hyderabad is the world's largest film studio complex, attracting filmmakers from around the globe.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="additional-info">
+            <h2>Explore Hyderabad</h2>
+            <div class="explore-items">
+                <div class="explore-item">
+                    <img src="https://static.toiimg.com/img/104444282/Master.jpgg" alt="Tourist Spot">
+                    <h3>Historical Monuments</h3>
+                    <p>Explore Hyderabad's historical monuments, including the Golconda Fort, Qutb Shahi Tombs, and the majestic Chowmahalla Palace.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-65286,resizemode-75,msid-89445852/news/india/statue-of-equality-was-made-in-china.jpg" alt="Monument">
+                    <h3>Architectural Wonders</h3>
+                    <p>Admire the stunning architectural wonders of Hyderabad, with its unique blend of Islamic and Indian styles.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/11/0f/05/telangana-state-culture.jpg" alt="Cultural Importance">
+                    <h3>Cultural Events</h3>
+                    <p>Experience the vibrant cultural events of Hyderabad, including festivals, music concerts, and traditional dance performances.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://lh6.googleusercontent.com/P72QA9sgfx-gr4Hr6p6ITvKQc9VKNZRAN7R0Hv4z5lQhLVrp0KGDZ1M0HWfkMmRlX9oORXUZP24euOeMggMDzDXQF2-HXBm2ax7PP5qvU3BOWJz97I9f-xjtzgLxih91NtydMHVxy18-h_gSt0dC4Q0" alt="Food Center">
+                    <h3>Culinary Delights</h3>
+                    <p>Indulge in Hyderabad's culinary delights, famous for its unique cuisine that includes biryani, haleem, and a variety of sweets.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5829754688966!2d78.47444271433665!3d17.385044004302843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97c14ec6d23d%3A0xb1f8a9bb0f382e38!2sHyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sus!4v1656132203702!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>
+    <div id="popup">
+        <h1>Exciting Offer</h1>
+        <p>Get discount upto 10% by using code : BH65D22D when you go to any Resturant in Hyderabad!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <footer class="footer">
+        <div class="copy">
+            
+            <span>&copy; 2024 Explore <br><br>All Rights Reserved.</span>
+        </div>
+        <div></div>
+            <div class="bottom-links" style="background-color: whitesmoke; border-radius: 15px; box-shadow: 1px 1px rgb(142, 139, 139);">
+                <div class="links" style="margin-top:-38px ;">
+                    <span>Our Sevices</span>
+                    <a href="https://teachnook.com/PrivacyPolicy">Privacy Policy</a>
+                    <a href="https://teachnook.com/TermsAndConditions">Refund Policy</a>
+                    <a href="https://teachnook.com/">Website</a>
+                </div>
+                <div class="links">
+                    <span>More Info</span>
+                    <a href="Contact_Us.html">Contact Us</a>
+                    <a href="CompareAll.html">Products</a>
+                    <a href="About_Us.html">Career</a>
+                    <a href="Rentals.html">Rentals</a>
+                </div>
+                <div class="links" style="margin-top:-8px ;">
+                    <span>Social Links</span>
+                    <a href="https://www.linkedin.com/company/teachnook"><i class="fab fa-linkedin social"></i></a>
+                    <a href="https://r.search.yahoo.com/_ylt=Awr1QPFP4gxm7BEH9He7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1712149200/RO=10/RU=https%3a%2f%2ftwitter.com%2fteachnook/RK=2/RS=Rc0RHE1I5LDQIQXunqs7tMh0lUQ-"><i class="fab fa-twitter social"></i></a>
+                    <a href="https://www.instagram.com/teachnook/"><i class="fab fa-instagram social"></i></a>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        setTimeout(showPopup, 3000);
+    </script>
+</body>
+</html>

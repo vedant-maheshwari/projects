@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gwalior - Explore the Historical Charm</title>
+    <link rel="stylesheet" href="city.css">
+    <style>
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        #popup button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #popup button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <div class="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="text-box">  
+            <header>
+                <h1>Gwalior - Explore the Historical Charm</h1>
+            </header>    
+        </div> 
+    </div>
+    <div class="container">
+        
+        <section class="description">
+            <h2>About Gwalior</h2>
+            <p>
+                Gwalior, a city with a rich historical background, is located in the heart of India. Known for its majestic palaces, ancient temples, and vibrant culture, Gwalior offers a unique blend of history and modernity.
+            </p>
+            <p>
+                The city's history is reflected in its impressive forts and palaces, which have stood the test of time. Gwalior is also a hub of classical music, being the birthplace of Tansen, one of India's greatest musicians.
+            </p>
+        </section>
+        
+        <section class="gallery">
+            <h2>Discover Gwalior</h2>
+            <div class="gallery-main">
+                <img id="mainImage" src="https://images.pexels.com/photos/5949485/pexels-photo-5949485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Main view of Gwalior">
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="https://images.pexels.com/photos/5949485/pexels-photo-5949485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail view of Gwalior" onclick="changeImage('https://images.pexels.com/photos/5949485/pexels-photo-5949485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiKHYgMxVzROtaIar5XCiZcV6QzT6phGTYGQ&s" alt="Thumbnail view of Gwalior" onclick="changeImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiKHYgMxVzROtaIar5XCiZcV6QzT6phGTYGQ&s')">
+                <img src="https://media.istockphoto.com/id/177394749/photo/gwalior-fort.jpg?s=612x612&w=0&k=20&c=bTVuIuE0RFaTTDE7C1wO1kBKGJL4y66KcmxagpoFoKw=" alt="Thumbnail view of Gwalior" onclick="changeImage('https://media.istockphoto.com/id/177394749/photo/gwalior-fort.jpg?s=612x612&w=0&k=20&c=bTVuIuE0RFaTTDE7C1wO1kBKGJL4y66KcmxagpoFoKw=')">
+                <img src="https://c1.wallpaperflare.com/preview/899/23/830/gwalior-fort-in-india-architecture-stone.jpg" alt="Thumbnail view of Gwalior" onclick="changeImage('https://c1.wallpaperflare.com/preview/899/23/830/gwalior-fort-in-india-architecture-stone.jpg')">
+            </div>
+        </section>
+        
+        <section class="fun-facts">
+            <h2>Fun Facts About Gwalior</h2>
+            <div class="fact-list">
+                <div class="fact-item">
+                    <p><span class="fact-number">1.</span> Gwalior Fort is one of the most impenetrable forts in India, often referred to as the "Gibraltar of India".</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">2.</span> The city is known for its annual Tansen Music Festival, which celebrates Indian classical music.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">3.</span> Gwalior is home to the second oldest reference library in Asia, the Scindia Oriental Research Institute.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">4.</span> The city's Jai Vilas Palace boasts one of the world's largest chandeliers, weighing several tons.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="additional-info">
+            <h2>Explore Gwalior</h2>
+            <div class="explore-items">
+                <div class="explore-item">
+                    <img src="https://mediaim.expedia.com/destination/2/05d671fa391830b4d5c4eb925c9d4dd7.jpg" alt="Tourist Spot">
+                    <h3>Majestic Forts</h3>
+                    <p>Explore the grandeur of Gwalior's forts, which offer a glimpse into the city's royal past and architectural brilliance.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzlckLq_93oMjiE0RmdoyDaXw7c43thJ6YJw&s" alt="Monument">
+                    <h3>Historic Monuments</h3>
+                    <p>Discover the historic monuments that tell the story of Gwalior's rich cultural heritage and its importance in Indian history.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://www.incredibleindia.org/content/dam/incredibleindia/images/places/gwalior/gwalior-ahiri-dance-0.jpg/jcr:content/renditions/cq5dam.web.1024.576.jpeg" alt="Cultural Importance">
+                    <h3>Cultural Events</h3>
+                    <p>Immerse yourself in the cultural events and festivals of Gwalior, celebrating its tradition of classical music and arts.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://im.hunt.in/cg/gwalior/City-Guide/frtser.jpg" alt="Food Center">
+                    <h3>Culinary Experiences</h3>
+                    <p>Savor the culinary delights of Gwalior, known for its unique flavors and traditional dishes that reflect the city's heritage.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56534.2842265879!2d78.16424745930768!3d26.21828743953433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c40a6b3c9d47%3A0x769787b220e12b5a!2sGwalior%2C%20Madhya%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1656130713702!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>
+    
+    <div id="popup">
+        <h1>Exciting Offer</h1>
+        <p>Get discount upto 10% by using code : BH65D22D when you go to any Resturant in Gwalior!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <footer class="footer">
+        <div class="copy">
+            
+            <span>&copy; 2024 Explore <br><br>All Rights Reserved.</span>
+        </div>
+        <div></div>
+            <div class="bottom-links" style="background-color: whitesmoke; border-radius: 15px; box-shadow: 1px 1px rgb(142, 139, 139);">
+                <div class="links" style="margin-top:-38px ;">
+                    <span>Our Sevices</span>
+                    <a href="https://teachnook.com/PrivacyPolicy">Privacy Policy</a>
+                    <a href="https://teachnook.com/TermsAndConditions">Refund Policy</a>
+                    <a href="https://teachnook.com/">Website</a>
+                </div>
+                <div class="links">
+                    <span>More Info</span>
+                    <a href="Contact_Us.html">Contact Us</a>
+                    <a href="CompareAll.html">Products</a>
+                    <a href="About_Us.html">Career</a>
+                    <a href="Rentals.html">Rentals</a>
+                </div>
+                <div class="links" style="margin-top:-8px ;">
+                    <span>Social Links</span>
+                    <a href="https://www.linkedin.com/company/teachnook"><i class="fab fa-linkedin social"></i></a>
+                    <a href="https://r.search.yahoo.com/_ylt=Awr1QPFP4gxm7BEH9He7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1712149200/RO=10/RU=https%3a%2f%2ftwitter.com%2fteachnook/RK=2/RS=Rc0RHE1I5LDQIQXunqs7tMh0lUQ-"><i class="fab fa-twitter social"></i></a>
+                    <a href="https://www.instagram.com/teachnook/"><i class="fab fa-instagram social"></i></a>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        setTimeout(showPopup, 3000);
+    </script>
+</body>
+</html>

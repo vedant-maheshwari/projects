@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucknow - The City of Nawabs</title>
+    <link rel="stylesheet" href="city.css">
+    <style>
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        #popup button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #popup button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <div class="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="text-box">  
+            <header>
+                <h1>Lucknow - The City of Nawabs</h1>
+            </header>    
+        </div> 
+    </div>
+    <div class="container">
+        
+        <section class="description">
+            <h2>About Lucknow</h2>
+            <p>
+                Lucknow, the capital city of Uttar Pradesh, is renowned for its rich cultural heritage, historical landmarks, and exquisite cuisine. Known as the "City of Nawabs", it reflects the grandeur and elegance of the bygone era.
+            </p>
+            <p>
+                The city is a significant cultural and artistic hub of North India, with a history that is deeply intertwined with the Mughal and British eras, evident in its architecture and traditions.
+            </p>
+        </section>
+        
+        <section class="gallery">
+            <h2>Discover Lucknow</h2>
+            <div class="gallery-main">
+                <img id="mainImage" src="https://lp-cms-production.imgix.net/2022-03/500pxRF_26117913.jpg" alt="Main view of Lucknow">
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="https://lp-cms-production.imgix.net/2022-03/500pxRF_26117913.jpg" alt="Thumbnail view of Lucknow" onclick="changeImage('https://lp-cms-production.imgix.net/2022-03/500pxRF_26117913.jpg')">
+                <img src="https://content.r9cdn.net/rimg/dimg/d9/75/d8688a1c-lm-49860-1765221cb27.jpg?width=1366&height=768&xhint=1410&yhint=1810&crop=true" alt="Thumbnail view of Lucknow" onclick="changeImage('https://content.r9cdn.net/rimg/dimg/d9/75/d8688a1c-lm-49860-1765221cb27.jpg?width=1366&height=768&xhint=1410&yhint=1810&crop=true')">
+                <img src="https://clubmahindra.gumlet.io/blog/media/section_images/banner1920-9b0fb2ab0eaf163.webp?w=376&dpr=2.6" alt="Thumbnail view of Lucknow" onclick="changeImage('https://clubmahindra.gumlet.io/blog/media/section_images/banner1920-9b0fb2ab0eaf163.webp?w=376&dpr=2.6')">
+                <img src="https://www.hindustantimes.com/ht-img/img/2024/02/05/550x309/Aerocity-projects-derive-their-name-from-the-fact-_1707163828407.jpg" alt="Thumbnail view of Lucknow" onclick="changeImage('https://www.hindustantimes.com/ht-img/img/2024/02/05/550x309/Aerocity-projects-derive-their-name-from-the-fact-_1707163828407.jpg')">
+            </div>
+        </section>
+        
+        <section class="fun-facts">
+            <h2>Fun Facts About Lucknow</h2>
+            <div class="fact-list">
+                <div class="fact-item">
+                    <p><span class="fact-number">1.</span> Lucknow is famous for its refined manners, beautiful gardens, and exquisite cuisine, particularly kebabs and biryanis.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">2.</span> The city is home to the grand Bara Imambara, an architectural marvel built in 1784 by Nawab Asaf-ud-Daula.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">3.</span> Lucknow's cultural heritage is reflected in its classical music, dance forms, and poetry, especially Urdu literature.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">4.</span> The city is a prominent center for Chikan embroidery, a traditional craft that is highly valued for its intricate patterns and craftsmanship.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="additional-info">
+            <h2>Explore Lucknow</h2>
+            <div class="explore-items">
+                <div class="explore-item">
+                    <img src="https://www.incredibleindia.org/content/dam/incredibleindia/images/places/lucknow/lucknow-rumi-darwaza-0.jpg/jcr:content/renditions/cq5dam.web.1024.576.jpeg" alt="Tourist Spot">
+                    <h3>Historical Monuments</h3>
+                    <p>Explore Lucknow's historical monuments, including the Rumi Darwaza, Chota Imambara, and the Residency, which tell the story of the city's rich past.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://mediaindia.eu/wp-content/uploads/2017/08/IMG-2825.jpg" alt="Monument">
+                    <h3>Mughal Architecture</h3>
+                    <p>Admire the stunning Mughal architecture, with its intricate details and grandeur, that is prominent throughout the city.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://www.newsbharati.com/Encyc/2018/1/24/2_02_56_06_UP1_1_H@@IGHT_400_W@@IDTH_750.jpg" alt="Cultural Importance">
+                    <h3>Cultural Events</h3>
+                    <p>Participate in Lucknow's cultural events and festivals, which showcase its rich traditions in music, dance, and cuisine.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://www.fabhotels.com/blog/wp-content/uploads/2022/07/600X400-Lucknow-Food-Banner-2-min.jpg" alt="Food Center">
+                    <h3>Culinary Experiences</h3>
+                    <p>Indulge in Lucknow's culinary experiences, renowned for its Awadhi cuisine, which includes dishes like kebabs, biryanis, and sweet delicacies.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.576846935755!2d80.9346293143886!3d26.846708083150156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd02e8bc7a93%3A0x5d8c5c822a0b6c2a!2sLucknow%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1656131903702!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>
+    
+    <div id="popup">
+        <h1>Exciting Offer</h1>
+        <p>Get discount upto 10% by using code : BH65D22D when you go to any Resturant in Lucknow!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <footer class="footer">
+        <div class="copy">
+            
+            <span>&copy; 2024 Explore <br><br>All Rights Reserved.</span>
+        </div>
+        <div></div>
+            <div class="bottom-links" style="background-color: whitesmoke; border-radius: 15px; box-shadow: 1px 1px rgb(142, 139, 139);">
+                <div class="links" style="margin-top:-38px ;">
+                    <span>Our Sevices</span>
+                    <a href="https://teachnook.com/PrivacyPolicy">Privacy Policy</a>
+                    <a href="https://teachnook.com/TermsAndConditions">Refund Policy</a>
+                    <a href="https://teachnook.com/">Website</a>
+                </div>
+                <div class="links">
+                    <span>More Info</span>
+                    <a href="Contact_Us.html">Contact Us</a>
+                    <a href="CompareAll.html">Products</a>
+                    <a href="About_Us.html">Career</a>
+                    <a href="Rentals.html">Rentals</a>
+                </div>
+                <div class="links" style="margin-top:-8px ;">
+                    <span>Social Links</span>
+                    <a href="https://www.linkedin.com/company/teachnook"><i class="fab fa-linkedin social"></i></a>
+                    <a href="https://r.search.yahoo.com/_ylt=Awr1QPFP4gxm7BEH9He7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1712149200/RO=10/RU=https%3a%2f%2ftwitter.com%2fteachnook/RK=2/RS=Rc0RHE1I5LDQIQXunqs7tMh0lUQ-"><i class="fab fa-twitter social"></i></a>
+                    <a href="https://www.instagram.com/teachnook/"><i class="fab fa-instagram social"></i></a>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        setTimeout(showPopup, 3000);
+    </script>
+</body>
+</html>

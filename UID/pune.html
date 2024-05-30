@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune - The Oxford of the East</title>
+    <link rel="stylesheet" href="city.css">
+    <style>
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        #popup button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #popup button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <div class="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="text-box">  
+            <header>
+                <h1>Pune - The Oxford of the East</h1>
+            </header>    
+        </div> 
+    </div>
+    <div class="container">
+        
+        <section class="description">
+            <h2>About Pune</h2>
+            <p>
+                Pune, located in the state of Maharashtra, is often referred to as the "Oxford of the East" due to its numerous educational institutions and vibrant academic atmosphere. It is also known for its rich history and cultural heritage.
+            </p>
+            <p>
+                The city is an emerging IT hub, with a thriving industrial and automotive sector. Pune is known for its pleasant climate, historical landmarks, and a blend of modern and traditional lifestyles.
+            </p>
+        </section>
+        
+        <section class="gallery">
+            <h2>Discover Pune</h2>
+            <div class="gallery-main">
+                <img id="mainImage" src="https://mittalbuilders.com/wp-content/uploads/2020/12/Reasons-to-settle-down-in-Pune-1400x700.png" alt="Main view of Pune">
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="https://mittalbuilders.com/wp-content/uploads/2020/12/Reasons-to-settle-down-in-Pune-1400x700.png" alt="Thumbnail view of Pune" onclick="changeImage('https://mittalbuilders.com/wp-content/uploads/2020/12/Reasons-to-settle-down-in-Pune-1400x700.png')">
+                <img src="https://media.timeout.com/images/105242415/image.jpg" alt="Thumbnail view of Pune" onclick="changeImage('https://media.timeout.com/images/105242415/image.jpg')">
+                <img src="https://media.licdn.com/dms/image/D4D12AQF9TIOxMgK6aA/article-cover_image-shrink_720_1280/0/1697400949285?e=2147483647&v=beta&t=4JMaimpQpZjYkPth-Dr3cGO4ItN0Oho5M0aa5Jy8nOQ" alt="Thumbnail view of Pune" onclick="changeImage('https://media.licdn.com/dms/image/D4D12AQF9TIOxMgK6aA/article-cover_image-shrink_720_1280/0/1697400949285?e=2147483647&v=beta&t=4JMaimpQpZjYkPth-Dr3cGO4ItN0Oho5M0aa5Jy8nOQ')">
+                <img src="https://homebazaar-blog.s3.ap-south-1.amazonaws.com/knowledge/wp-content/uploads/2022/08/02130810/How-is-Pune-City-to-Live-Livability-Infrastructure-Culture-More_FeatureImage5.jpeg" alt="Thumbnail view of Pune" onclick="changeImage('https://homebazaar-blog.s3.ap-south-1.amazonaws.com/knowledge/wp-content/uploads/2022/08/02130810/How-is-Pune-City-to-Live-Livability-Infrastructure-Culture-More_FeatureImage5.jpeg')">
+            </div>
+        </section>
+        
+        <section class="fun-facts">
+            <h2>Fun Facts About Pune</h2>
+            <div class="fact-list">
+                <div class="fact-item">
+                    <p><span class="fact-number">1.</span> Pune is home to the prestigious Fergusson College, one of the oldest educational institutions in India, established in 1885.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">2.</span> The city is famous for the Aga Khan Palace, a historic landmark where Mahatma Gandhi was imprisoned during the Indian freedom struggle.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">3.</span> Pune's Osho International Meditation Resort attracts visitors from around the world for spiritual and wellness retreats.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">4.</span> The city hosts the popular Pune International Film Festival, showcasing films from various countries and promoting cultural exchange.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="additional-info">
+            <h2>Explore Pune</h2>
+            <div class="explore-items">
+                <div class="explore-item">
+                    <img src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/lal-mahal.jpg" alt="Tourist Spot">
+                    <h3>Historical Sites</h3>
+                    <p>Explore Pune's historical sites, including Shaniwar Wada, Sinhagad Fort, and the Pataleshwar Cave Temple, which offer a glimpse into the city's rich past.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://static.punemirror.com/full/dc6f4d4c-8567-426a-96f2-524a30cf43c8.webp" alt="Monument">
+                    <h3>Colonial Architecture</h3>
+                    <p>Admire Pune's colonial architecture, with buildings like the Pune University, built in the Gothic style, adding to the city's charm.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/06/23/Pictures/chaitanya-october-october-dipotsav-hassya-shaniwar-mandal_138b3d30-5808-11e7-8fa7-9af4fbfb1c71.JPG" alt="Cultural Importance">
+                    <h3>Festivals and Events</h3>
+                    <p>Experience Pune's vibrant festivals and events, such as Ganesh Chaturthi, Pune Festival, and classical music concerts at the Sawai Gandharva Bhimsen Mahotsav.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://assets.zeezest.com/blogs/PROD_iconic%20eateries%20in%20pune%20replacement%20banner_1692687558503.jpg" alt="Food Center">
+                    <h3>Food and Dining</h3>
+                    <p>Indulge in Pune's diverse culinary scene, offering everything from traditional Maharashtrian dishes to international cuisines and trendy cafes.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.6710879591344!2d73.85674321432075!3d18.520430089434915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c068c4ed4d2f%3A0x60ff1cbb620c24b9!2sPune%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1656132303702!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>
+    <div id="popup">
+        <h1>Exciting Offer</h1>
+        <p>Get discount upto 10% by using code : BH65D22D when you go to any Resturant in Pune!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    
+    <footer class="footer">
+        <div class="copy">
+            
+            <span>&copy; 2024 Explore <br><br>All Rights Reserved.</span>
+        </div>
+        <div></div>
+            <div class="bottom-links" style="background-color: whitesmoke; border-radius: 15px; box-shadow: 1px 1px rgb(142, 139, 139);">
+                <div class="links" style="margin-top:-38px ;">
+                    <span>Our Sevices</span>
+                    <a href="https://teachnook.com/PrivacyPolicy">Privacy Policy</a>
+                    <a href="https://teachnook.com/TermsAndConditions">Refund Policy</a>
+                    <a href="https://teachnook.com/">Website</a>
+                </div>
+                <div class="links">
+                    <span>More Info</span>
+                    <a href="Contact_Us.html">Contact Us</a>
+                    <a href="CompareAll.html">Products</a>
+                    <a href="About_Us.html">Career</a>
+                    <a href="Rentals.html">Rentals</a>
+                </div>
+                <div class="links" style="margin-top:-8px ;">
+                    <span>Social Links</span>
+                    <a href="https://www.linkedin.com/company/teachnook"><i class="fab fa-linkedin social"></i></a>
+                    <a href="https://r.search.yahoo.com/_ylt=Awr1QPFP4gxm7BEH9He7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1712149200/RO=10/RU=https%3a%2f%2ftwitter.com%2fteachnook/RK=2/RS=Rc0RHE1I5LDQIQXunqs7tMh0lUQ-"><i class="fab fa-twitter social"></i></a>
+                    <a href="https://www.instagram.com/teachnook/"><i class="fab fa-instagram social"></i></a>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        setTimeout(showPopup, 3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolkata - The City of Joy</title>
+    <link rel="stylesheet" href="city.css">
+    <style>
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        #popup button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #popup button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <div class="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="text-box">  
+            <header>
+                <h1>Kolkata - The City of Joy</h1>
+            </header>    
+        </div> 
+    </div>
+    <div class="container">
+        
+        <section class="description">
+            <h2>About Kolkata</h2>
+            <p>
+                Kolkata, the capital of West Bengal, is famously known as the "City of Joy". It is a city rich in culture, history, and tradition, serving as the cultural and intellectual hub of India.
+            </p>
+            <p>
+                The city is known for its colonial architecture, art galleries, and literary heritage. Kolkata is also the birthplace of several notable poets, writers, and artists, contributing significantly to Indian culture.
+            </p>
+        </section>
+        
+        <section class="gallery">
+            <h2>Discover Kolkata</h2>
+            <div class="gallery-main">
+                <img id="mainImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN2WOkI0wPnHF0zNNyZIw1HA-L8Ic-5AIXUQ&s" alt="Main view of Kolkata">
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN2WOkI0wPnHF0zNNyZIw1HA-L8Ic-5AIXUQ&s" alt="Thumbnail view of Kolkata" onclick="changeImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN2WOkI0wPnHF0zNNyZIw1HA-L8Ic-5AIXUQ&s')">
+                <img src="https://s3.india.com/travel/wp-content/uploads/2017/10/Kolkata-city1.jpg" alt="Thumbnail view of Kolkata" onclick="changeImage('https://s3.india.com/travel/wp-content/uploads/2017/10/Kolkata-city1.jpg')">
+                <img src="https://img.staticmb.com/mbcontent/images/crop/uploads/2023/1/best-places-to-live-in-kolkata%20(2)_0_1200.jpg" alt="Thumbnail view of Kolkata" onclick="changeImage('https://img.staticmb.com/mbcontent/images/crop/uploads/2023/1/best-places-to-live-in-kolkata%20(2)_0_1200.jpg')">
+                <img src="https://assets.telegraphindia.com/telegraph/2024/Jan/1705798075_kolkata.jpg" alt="Thumbnail view of Kolkata" onclick="changeImage('https://assets.telegraphindia.com/telegraph/2024/Jan/1705798075_kolkata.jpg')">
+            </div>
+        </section>
+        
+        <section class="fun-facts">
+            <h2>Fun Facts About Kolkata</h2>
+            <div class="fact-list">
+                <div class="fact-item">
+                    <p><span class="fact-number">1.</span> Kolkata is home to the largest book fair in Asia, the Kolkata Book Fair, attracting millions of book lovers every year.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">2.</span> The city boasts the iconic Howrah Bridge, one of the longest cantilever bridges in the world.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">3.</span> Kolkata is famous for its festivals, particularly Durga Puja, which is celebrated with grand festivities and elaborate decorations.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">4.</span> The city has a rich literary heritage, being the birthplace of Rabindranath Tagore, the first Asian Nobel laureate in Literature.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="additional-info">
+            <h2>Explore Kolkata</h2>
+            <div class="explore-items">
+                <div class="explore-item">
+                    <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/01/Victoria-Memorial.jpg" alt="Tourist Spot">
+                    <h3>Colonial Architecture</h3>
+                    <p>Discover Kolkata's colonial architecture, with landmarks such as Victoria Memorial, St. Paul's Cathedral, and the Writer's Building.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/19/52/04/art-is-not-just-a-talent.jpg" alt="Monument">
+                    <h3>Art and Culture</h3>
+                    <p>Immerse yourself in the city's art and culture scene, with numerous galleries, theaters, and cultural events showcasing its rich heritage.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://floweraura-blog-img.s3.ap-south-1.amazonaws.com/festivals-kolkata/cover.jpg" alt="Cultural Importance">
+                    <h3>Festivals</h3>
+                    <p>Experience the vibrant festivals of Kolkata, especially Durga Puja, which is celebrated with immense joy and grandeur across the city.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://lakshmisharath.com/wp-content/uploads/2018/10/rsz_next_stop_kolkata_monkey_bar__photo_sanjay_ramchandran__b64w6839.jpg" alt="Food Center">
+                    <h3>Culinary Delights</h3>
+                    <p>Indulge in Kolkata's culinary delights, known for its sweet delicacies like rosogolla and sandesh, as well as street food like kathi rolls and puchkas.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.889709599839!2d88.36388131432083!3d22.572646986729827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277e0ea601bc9%3A0xf75696e5a6bbf4ed!2sKolkata%2C%20West%20Bengal%2C%20India!5e0!3m2!1sen!2sus!4v1656132003702!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>
+    
+    <div id="popup">
+        <h1>Exciting Offer</h1>
+        <p>Get discount upto 10% by using code : BH65D22D when you go to any Resturant in Kolkata!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <footer class="footer">
+        <div class="copy">
+            
+            <span>&copy; 2024 Explore <br><br>All Rights Reserved.</span>
+        </div>
+        <div></div>
+            <div class="bottom-links" style="background-color: whitesmoke; border-radius: 15px; box-shadow: 1px 1px rgb(142, 139, 139);">
+                <div class="links" style="margin-top:-38px ;">
+                    <span>Our Sevices</span>
+                    <a href="https://teachnook.com/PrivacyPolicy">Privacy Policy</a>
+                    <a href="https://teachnook.com/TermsAndConditions">Refund Policy</a>
+                    <a href="https://teachnook.com/">Website</a>
+                </div>
+                <div class="links">
+                    <span>More Info</span>
+                    <a href="Contact_Us.html">Contact Us</a>
+                    <a href="CompareAll.html">Products</a>
+                    <a href="About_Us.html">Career</a>
+                    <a href="Rentals.html">Rentals</a>
+                </div>
+                <div class="links" style="margin-top:-8px ;">
+                    <span>Social Links</span>
+                    <a href="https://www.linkedin.com/company/teachnook"><i class="fab fa-linkedin social"></i></a>
+                    <a href="https://r.search.yahoo.com/_ylt=Awr1QPFP4gxm7BEH9He7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1712149200/RO=10/RU=https%3a%2f%2ftwitter.com%2fteachnook/RK=2/RS=Rc0RHE1I5LDQIQXunqs7tMh0lUQ-"><i class="fab fa-twitter social"></i></a>
+                    <a href="https://www.instagram.com/teachnook/"><i class="fab fa-instagram social"></i></a>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        setTimeout(showPopup, 3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coimbatore - The Textile City</title>
+    <link rel="stylesheet" href="city.css">
+    <style>
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        #popup button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #popup button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <div class="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="text-box">  
+            <header>
+                <h1>Coimbatore - The Textile City</h1>
+            </header>    
+        </div> 
+    </div>
+    <div class="container">
+        
+        <section class="description">
+            <h2>About Coimbatore</h2>
+            <p>
+                Coimbatore, located in the state of Tamil Nadu, is renowned as the "Manchester of South India" for its extensive textile industry. The city is a major hub for textiles, engineering, and educational institutions.
+            </p>
+            <p>
+                Known for its pleasant climate and scenic surroundings, Coimbatore is a perfect blend of tradition and modernity. The city also serves as a gateway to various tourist destinations in the region.
+            </p>
+        </section>
+        
+        <section class="gallery">
+            <h2>Discover Coimbatore</h2>
+            <div class="gallery-main">
+                <img id="mainImage" src="https://img.veenaworld.com/wp-content/uploads/2022/02/Coimbatore-to-Ooty.jpg" alt="Main view of Coimbatore">
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="https://www.shutterstock.com/image-photo/coimbatore-city-gandhipuram-bridge-aerial-600nw-2304621977.jpg" alt="Thumbnail view of Coimbatore" onclick="changeImage('https://www.shutterstock.com/image-photo/coimbatore-city-gandhipuram-bridge-aerial-600nw-2304621977.jpg')">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/3d/6a/23/caption.jpg?w=300&h=300&s=1" alt="Thumbnail view of Coimbatore" onclick="changeImage('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/3d/6a/23/caption.jpg?w=300&h=300&s=1')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQnYRJ8zxX2GSUEqTVPWt9ZybVpHpQxRZ5eg&s" alt="Thumbnail view of Coimbatore" onclick="changeImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQnYRJ8zxX2GSUEqTVPWt9ZybVpHpQxRZ5eg&s')">
+                <img src="https://img.veenaworld.com/wp-content/uploads/2022/02/Coimbatore-to-Ooty.jpg" alt="Thumbnail view of Coimbatore" onclick="changeImage('https://img.veenaworld.com/wp-content/uploads/2022/02/Coimbatore-to-Ooty.jpg')">
+            </div>
+        </section>
+        
+        <section class="fun-facts">
+            <h2>Fun Facts About Coimbatore</h2>
+            <div class="fact-list">
+                <div class="fact-item">
+                    <p><span class="fact-number">1.</span> Coimbatore is often referred to as the "Pump City" due to its extensive pump manufacturing industry.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">2.</span> The city is home to one of the largest textile manufacturing sectors in India, earning it the nickname "Textile City".</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">3.</span> Coimbatore has a thriving educational scene with numerous reputed institutions, including the renowned PSG College of Technology.</p>
+                </div>
+                <div class="fact-item">
+                    <p><span class="fact-number">4.</span> The city's pleasant weather and proximity to hill stations make it a popular destination for tourists and nature enthusiasts.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="additional-info">
+            <h2>Explore Coimbatore</h2>
+            <div class="explore-items">
+                <div class="explore-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIK7Laz99katD1_b6YKf48oXcwTdzQPmJS3Q&s" alt="Tourist Spot">
+                    <h3>Industrial Hubs</h3>
+                    <p>Explore the industrial hubs of Coimbatore, which are renowned for their engineering and textile manufacturing prowess.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/98/55/d6/caption.jpg?w=1200&h=-1&s=1" alt="Monument">
+                    <h3>Cultural Sites</h3>
+                    <p>Discover the cultural and historical sites of Coimbatore, reflecting the city's rich heritage and traditions.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRninOweBxcrahm7fz0j-2EeKD1wSxYe4QlQ&s" alt="Cultural Importance">
+                    <h3>Natural Beauty</h3>
+                    <p>Enjoy the natural beauty surrounding Coimbatore, with scenic landscapes and nearby hill stations offering serene retreats.</p>
+                </div>
+                <div class="explore-item">
+                    <img src="https://www.srisabari.in/img/coimbatore-food-culture.jpg" alt="Food Center">
+                    <h3>Food Delights</h3>
+                    <p>Savor the culinary delights of Coimbatore, known for its unique South Indian flavors and traditional dishes.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62480.46882202918!2d76.93663706760156!3d11.016844498979578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8592ed94112c7%3A0x5e389b5e2eea44a0!2sCoimbatore%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1656131243702!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>
+    
+    <div id="popup">
+        <h1>Exciting Offer</h1>
+        <p>Get discount upto 10% by using code : BH65D22D when you go to any Resturant in Coimbatore!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <footer class="footer">
+        <div class="copy">
+            
+            <span>&copy; 2024 Explore <br><br>All Rights Reserved.</span>
+        </div>
+        <div></div>
+            <div class="bottom-links" style="background-color: whitesmoke; border-radius: 15px; box-shadow: 1px 1px rgb(142, 139, 139);">
+                <div class="links" style="margin-top:-38px ;">
+                    <span>Our Sevices</span>
+                    <a href="https://teachnook.com/PrivacyPolicy">Privacy Policy</a>
+                    <a href="https://teachnook.com/TermsAndConditions">Refund Policy</a>
+                    <a href="https://teachnook.com/">Website</a>
+                </div>
+                <div class="links">
+                    <span>More Info</span>
+                    <a href="Contact_Us.html">Contact Us</a>
+                    <a href="CompareAll.html">Products</a>
+                    <a href="About_Us.html">Career</a>
+                    <a href="Rentals.html">Rentals</a>
+                </div>
+                <div class="links" style="margin-top:-8px ;">
+                    <span>Social Links</span>
+                    <a href="https://www.linkedin.com/company/teachnook"><i class="fab fa-linkedin social"></i></a>
+                    <a href="https://r.search.yahoo.com/_ylt=Awr1QPFP4gxm7BEH9He7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1712149200/RO=10/RU=https%3a%2f%2ftwitter.com%2fteachnook/RK=2/RS=Rc0RHE1I5LDQIQXunqs7tMh0lUQ-"><i class="fab fa-twitter social"></i></a>
+                    <a href="https://www.instagram.com/teachnook/"><i class="fab fa-instagram social"></i></a>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        setTimeout(showPopup, 3000);
+    </script>
+</body>
+</html>
