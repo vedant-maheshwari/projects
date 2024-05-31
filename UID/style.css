@@ -186,30 +186,30 @@ body{
 }
 
 
+/* Circle card styles */
 .circle {
-    padding: 50px; 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 50px;
-    justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-}
-
-.card {
-    background-color: #FAFAFA;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 200px; 
-    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    gap: 20px;
+    padding: 50px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 8px 24px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .circle p {
@@ -232,7 +232,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s, transform 0.3s;
+    transition:  transform 0.3s;
     margin: 20px auto; /* Center the button horizontally */
     cursor: pointer;
 }
@@ -313,7 +313,7 @@ body{
 }
 /* Adjust background color and font styles */
 .content-2 {
-    background-color: #f5f5f5;
+    background-color: white;
     padding: 50px 0;
     text-align: center;
 }
@@ -330,44 +330,8 @@ body{
 }
 
 /* Button styles */
-#btn a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    background-color: #007bff;
-    padding: 15px 30px;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
-}
 
-#btn a:hover {
-    background-color: #0056b3;
-}
 
-/* Circle card styles */
-.circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.card {
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
 /* Grid layout for text and image */
 .grid-container {
     display: grid;
