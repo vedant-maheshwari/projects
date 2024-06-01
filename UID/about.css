@@ -119,14 +119,6 @@ body{
     align-items: center;
 }
 
-#circle {
-    border-radius: 50%;
-    height: 240px;
-    width: 240px;
-    margin-bottom: 20px;
-    shape-outside: circle();
-}
-
 .box h2 {
     text-align: center;
     margin-bottom: 20px;

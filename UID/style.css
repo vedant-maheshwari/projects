@@ -273,31 +273,6 @@ body{
     box-shadow: 5px 5px 5px rgba(34, 34, 220, 0.613);
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px;
-    margin-top: 40px;
-    background-color: rgba(34, 34, 220, 0.613);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px rgba(34, 34, 220, 0.613);
-}
-
-.grid-item {
-    background-color: rgba(34, 34, 220, 0.300);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px rgba(34, 34, 220, 0.613);
-}
-
-.grid-item p {
-    color: whitesmoke;
-    font-size: 18px;
-    padding: 10px;
-    text-align: center;
-}
 
 #btn {
     text-align: center;
