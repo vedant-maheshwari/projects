@@ -89,6 +89,7 @@ body{
     border-radius: 50%;
     background-color: rgba(34, 34, 220, 0.613);
     color: whitesmoke;
+    cursor: pointer;
 }
 
 .search form input{
@@ -110,11 +111,11 @@ body{
 @keyframes open {
     from{
         width: 0px;
-        background-color: rgba(75, 75, 219, 0.61);
+        background-color: white;
+        border: 1.5px solid rgba(34, 34, 220, 0.613);
     }
     to{
         width: 500px;
-        
         border: 1.5px solid rgba(34, 34, 220, 0.613);
     }
 }
