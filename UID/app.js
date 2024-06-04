@@ -5,7 +5,7 @@ btn.addEventListener("click",function show(){
     btn.style.display = 'none';
 })
 
-const search = () => {
+function search() {
     const searchbox = document.getElementById("search-item").value.toLowerCase();
     const cityItems = document.querySelectorAll(".items");
     const headings = document.querySelectorAll(".items h2");
