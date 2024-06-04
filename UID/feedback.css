@@ -124,6 +124,11 @@ body{
     text-align: left;
 }
 
+.bottom-links {
+    display: flex;
+    padding: 40px 0;
+}
+
 .bottom-links .links {
     display: flex;
     flex-direction: column;
