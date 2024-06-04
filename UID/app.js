@@ -6,22 +6,18 @@ btn.addEventListener("click",function show(){
 })
 
 const search = () => {
-    const searchbox = document.getElementById("search-item").value.toUpperCase();
-    const searchitem = document.getElementById("contents");
-    const city = document.querySelectorAll(".items");
-    const cityName = searchitem.getElementsByTagName("h2");
+    const searchbox = document.getElementById("search-item").value.toLowerCase();
+    const cityItems = document.querySelectorAll(".items");
+    const headings = document.querySelectorAll(".items h2");
 
-    for (var i = 0; i < cityName.length; i++) {
-        let match = city[i].getElementsByTagName("h2")[0];
+    for (let i = 0; i < headings.length; i++) {
+        let textValue = headings[i].innerText.toLowerCase();
 
-        if (match) {
-            let textValue = match.textContent || match.innerHTML;
-
-            if (textValue.toUpperCase().indexOf(searchbox) > -1) {
-                city[i].style.display = "";
-            } else {
-                city[i].style.display = "none";
-            }
+        if (textValue.includes(searchbox)) {
+            cityItems[i].style.display = "";
+        } else {
+            cityItems[i].style.display = "none";
         }
     }
 }
+
