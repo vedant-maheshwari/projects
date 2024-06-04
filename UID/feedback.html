@@ -105,6 +105,11 @@
         nameError.textContent = 'Name is required.';
         isValid = false;
     }
+    const numCheck = /\d/;
+    if(numCheck.test(name)){
+        nameError.textContent = 'Name cannot contain numbers.';
+        isValid = false;
+    }
 
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (email === '') {
