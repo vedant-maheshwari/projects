@@ -159,8 +159,10 @@
 
     <script>
         function changeImage(src) {
-            document.getElementById('mainImage').src = src;
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = src;
         }
+
         function closePopup() {
             document.getElementById("popup").style.display = "none";
         }
