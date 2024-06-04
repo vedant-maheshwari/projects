@@ -349,7 +349,7 @@ body{
     color: black;
 }
 .bottom-links .links a:hover{
-    scale: calc(1.1);
+    transform: scale(1.1);
     color: rgba(34, 34, 220, 0.613);
 }
 .links .social{
@@ -357,7 +357,7 @@ body{
     transition: 0.3s;
 }
 .links .social:hover{
-    scale: calc(1.1);
+    transform: scale(1.1);
     color:  rgba(34, 34, 220, 0.613);
 
 }
