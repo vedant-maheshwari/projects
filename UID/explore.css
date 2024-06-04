@@ -68,23 +68,11 @@ body{
     justify-content: center;
 }
 
-/* .search{
-    height: 130px;
-    display: flex;
-    cursor: pointer;
-    padding: 10px 20px;
-    background: #fff;
-    border-radius: 30px;
-    align-items: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-} */
-
 #search-item{
     display: none;
 }
 
 .fa{
-    
     padding: 20px;
     border-radius: 50%;
     background-color: rgba(34, 34, 220, 0.613);
@@ -182,8 +170,6 @@ body{
 
 .bottom-links {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 40px 0;
 }
 
